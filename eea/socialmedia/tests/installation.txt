@@ -1,0 +1,30 @@
+============================
+eea.socialmedia installation
+============================
+
+Addition of JS:
+
+  >>> js = self.portal.portal_javascripts
+  >>> 'socialmedia.js' in js.getResourceIds()
+  True
+
+Addition of action icons:
+
+  >>> icons = self.portal.portal_actionicons
+  >>> icons.getActionIcon('plone', 'twitter') 
+  'twitter16x16.png'
+  >>> icons.getActionIcon('plone', 'delicious') 
+  'delicious16x16.png'
+  >>> icons.getActionIcon('plone', 'facebook') 
+  'facebook16x16.png'
+
+Addition of document actions:
+
+  >>> document_actions = self.portal.portal_actions.listFilteredActions(self.portal)['document_actions']
+  >>> document_actions_ids = [i['id'] for i in document_actions]
+  >>> 'twitter' in document_actions_ids
+  True
+  >>> 'delicious' in document_actions_ids
+  True
+  >>> 'facebook' in document_actions_ids
+  True
