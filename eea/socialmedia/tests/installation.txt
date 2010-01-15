@@ -2,12 +2,6 @@
 eea.socialmedia installation
 ============================
 
-Addition of JS:
-
-  >>> js = self.portal.portal_javascripts
-  >>> 'socialmedia.js' in js.getResourceIds()
-  True
-
 Addition of action icons:
 
   >>> icons = self.portal.portal_actionicons
