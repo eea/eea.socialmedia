@@ -1,7 +1,10 @@
-from setuptools import setup, find_packages
 import os
+from os.path import join
+from setuptools import setup, find_packages
 
-version = '0.1'
+name = 'eea.socialmedia'
+path = name.split('.') + ['version.txt']
+version = open(join(*path)).read().strip()
 
 setup(name='eea.socialmedia',
       version=version,
