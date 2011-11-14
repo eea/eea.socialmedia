@@ -1,0 +1,14 @@
+Changelog
+=========
+
+0.3-dev - (unreleased)
+---------------------
+* Bug fix: Added translation domain to ZCML files [voineali #4139]
+
+0.2 (2010-09-21)
+----------------
+- Add cache settings, #3660
+
+0.1 (2010-02-15)
+----------------
+- Initial release

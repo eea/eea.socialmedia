@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<action-icons>
+ <action-icon category="plone" action_id="twitter"
+              title="Twitter" priority="0"
+              icon_expr="twitter16x16.png"/>
+ <action-icon category="plone" action_id="delicious"
+              title="Delicious" priority="0"
+              icon_expr="delicious16x16.png"/>
+ <action-icon category="plone" action_id="facebook"
+              title="Facebook" priority="0"
+              icon_expr="facebook16x16.png"/>
+</action-icons>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool">
+ <action-provider name="portal_actions">
+  <action title="Tweet this" action_id="twitter"
+     category="document_actions"
+     condition_expr=""
+     url_expr="string:http://twitter.com/home?status=${object_url}" visible="True">
+   <permission>View</permission>
+  </action>
+  <action title="Bookmark on Delicious" action_id="delicious"
+     category="document_actions"
+     condition_expr=""
+     url_expr="string:http://delicious.com/post?url=${object_url}&amp;title=${object/Title}"
+     visible="True">
+   <permission>View</permission>
+  </action>
+  <action title="Share on Facebook" action_id="facebook"
+     category="document_actions"
+     condition_expr=""
+     url_expr="string:http://www.facebook.com/sharer.php?u=${object_url}&amp;t=${object/Title}"
+     visible="True">
+   <permission>View</permission>
+  </action>
+ </action-provider>
+</object>
