@@ -1,28 +1,21 @@
 Changelog
 =========
 
-
-4.0-dev - (unreleased)
-----------------------
-
+4.0 - (2011-11-18)
+------------------
 * Bug fix: Added translation domain to ZCML files
   [voineali #4139]
-
 * Feature: Added upgrade steps
   [voineali #4392]
-
 * Feature: Plone 4.x compatible release
   [ghicaale #4213]
 
-
 0.2 (2010-09-21)
 ----------------
-
 * Add cache settings
   [thuliper #3660]
 
-
 0.1 (2010-02-15)
 ----------------
-
 * Initial release
+
