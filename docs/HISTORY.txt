@@ -6,7 +6,12 @@ Changelog
 * Feature: Add new social network: tweeter, 
   facebook like and share, google plus one
   [prospchr fixes #5094]
-
+* Upgrade step: Hide 
+  plone.abovecontenttitle.documentactions
+  From viewlets.interfaces.IBelowContentBody
+  using @@manage-viewlets
+  [prospchr fixes #5074]
+     
 4.1 - (2011-11-18)
 ------------------
 * Rerelease broken egg  
