@@ -5,7 +5,7 @@ Changelog
 ----------------------
 * Feature: Add new social network: tweeter, 
   facebook like and share, google plus one
-  [prospchr #5094]
+  [prospchr fixes #5094]
 
 4.1 - (2011-11-18)
 ------------------
