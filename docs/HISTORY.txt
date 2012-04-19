@@ -3,6 +3,9 @@ Changelog
 
 4.2-dev - (unreleased)
 ----------------------
+* Feature: Add new social network: tweeter, 
+  facebook like and share, google plus one
+  [prospchr #5094]
 
 4.1 - (2011-11-18)
 ------------------

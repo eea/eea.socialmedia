@@ -1,0 +1,30 @@
+#socialmedia-list {
+    vertical-align: top;
+}
+.social-box {
+    background: none repeat scroll 0 0 transparent !important;
+    float: left;
+    padding-right: 10px !important;
+}
+#socialmedia-list #twitter {
+    width: 75px;
+}
+#socialmedia-list #facebook {
+    width: 130px;
+}
+#socialmedia-list #google {
+    width: 60px;
+}
+#socialmedia-list #delicious {
+}
+#socialmedia-list .link-https {
+    background: none repeat scroll 0 0 transparent;
+    padding: 0 !important;
+}
+.align-right {
+    text-align: right;
+}
+.table-document-actions {
+    margin: 0 10px;
+    width: 580px;
+}

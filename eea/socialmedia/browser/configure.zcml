@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="eea">
+
+    <!-- Resource directories -->
+
+    <browser:resourceDirectory
+        name="eea.socialmedia.stylesheets"
+        directory="stylesheets"
+        />
+
+    <!-- Viewlets registration -->
+    
+    <browser:viewlet
+        name="eea.socialmedia"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+        class=".viewlets.SocialMediaViewlet"     
+        permission="zope2.View"
+        />
+
+</configure>

@@ -1,0 +1,83 @@
+<div id="socialmedia-viewlet"
+     i18n:domain="plone">
+
+    <div class="visualClear"><!-- --></div>
+
+    <div class="documentActions" tal:condition="context/@@plone_context_state/is_view_template">
+        <tal:docactions tal:condition="view/actions">
+
+            <h5 class="hiddenStructure"
+                i18n:translate="heading_document_actions">
+                Document Actions
+            </h5>
+            <h2 i18n:translate="share_with_others" class="share-title">Share with others</h2>
+
+            <table class="table-document-actions">
+                <tr>
+                    <td>
+                         <div id="socialmedia-list">
+                            <div id="delicious" class="social-box">
+                                <a href="http://www.delicious.com/save" onclick="window.open('http://www.delicious.com/save?v=5&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;">
+                                    <img tal:attributes="src string:${view/portal_url}/delicious20x20.png" alt="Delicious" />
+                                </a>
+                            </div>                             
+                            <div id="twitter" class="social-box">
+                                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                            </div>          
+                            <div id="google" class="social-box">
+                                 <!-- Place this tag where you want the +1 button to render -->
+                                <g:plusone size="medium"></g:plusone>
+                                
+                                <!-- Place this render call where appropriate -->
+                                <script type="text/javascript">
+                                  (function() {
+                                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                    po.src = 'https://apis.google.com/js/plusone.js';
+                                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                  })();
+                                </script>
+                            </div>   
+                            <div id="facebook" class="social-box">
+                                <div id="fb-root"></div>
+                                <script>(function(d, s, id) {
+                                  var js, fjs = d.getElementsByTagName(s)[0];
+                                  if (d.getElementById(id)) return;
+                                  js = d.createElement(s); js.id = id;
+                                  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+                                  fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+                                <div class="fb-like" data-send="true" data-layout="button_count" data-show-faces="false"></div>             
+                            </div>                            
+        
+                        </div>
+                    </td>                    
+                    <td class="align-right">
+                        <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
+                            <li tal:repeat="daction view/actions"
+                                tal:attributes="id python:'document-action-' + normalizeString(daction['id'])">
+                                <a href=""
+                               tal:attributes="href daction/url;
+                                               title daction/description">
+                                   <img tal:condition="daction/icon" tal:attributes="src daction/icon; alt daction/title; title daction/title"/>
+                                   <tal:action tal:condition="not:daction/icon" tal:content="daction/title" i18n:translate="">
+                                    Action name
+                                    </tal:action>
+                                </a>
+                            </li>
+                        
+                        </ul>
+                        
+                    </td>            
+
+                        </tr>
+                    </table>              
+              
+              
+                    </tal:docactions>
+            
+                    <div tal:replace="structure provider:plone.documentactions"/>
+            
+                </div>
+</div>
+
