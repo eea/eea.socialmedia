@@ -10,7 +10,7 @@ Changelog
   plone.abovecontenttitle.documentactions
   From viewlets.interfaces.IBelowContentBody
   using @@manage-viewlets
-  [prospchr fixes #5074]
+  [prospchr fixes #5094]
      
 4.1 - (2011-11-18)
 ------------------
