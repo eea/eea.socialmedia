@@ -7,9 +7,11 @@ Changelog
   facebook like and share, google plus one
   [prospchr fixes #5094]
 * Upgrade step: Hide 
-  plone.abovecontenttitle.documentactions
+  1. plone.abovecontenttitle.documentactions
   From viewlets.interfaces.IBelowContentBody
   using @@manage-viewlets
+  2. portal_setup > EEA Social Media profile > import CSS registry.
+     portal_setup > EEA Social Media profile > import actions.
   [prospchr fixes #5094]
      
 4.1 - (2011-11-18)
