@@ -5,7 +5,7 @@
 
   <genericsetup:upgradeSteps
     source="*"
-    destination="4.0"
+    destination="4.1"
     profile="eea.socialmedia:default">
 
     <genericsetup:upgradeDepends
