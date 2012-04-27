@@ -9,12 +9,11 @@ Changelog
 * Feature: Add new social network: tweeter, 
   facebook like and share, google plus one
   [prospchr fixes #5094]
-* Upgrade step: Hide 
-  1. plone.abovecontenttitle.documentactions
+* Upgrade step: 
+  1. in plone site setup > upgrade eea.socialmedia
+  2. Hide plone.abovecontenttitle.documentactions
   From viewlets.interfaces.IBelowContentBody
   using @@manage-viewlets
-  2. portal_setup > EEA Social Media profile > import CSS registry.
-     portal_setup > EEA Social Media profile > import actions.
   [prospchr fixes #5094]
 
 4.1 - (2011-11-18)
