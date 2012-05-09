@@ -3,6 +3,7 @@ Changelog
 
 4.4-dev - (unreleased)
 ----------------------
+ * Bug fix: fixed position of right align for documentActions [ichimdav #5150]
 
 4.3 - (2012-04-27)
 ------------------

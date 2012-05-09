@@ -24,7 +24,9 @@
 .align-right {
     text-align: right;
 }
+/* #5150 set table display to table */
 .table-document-actions {
     margin: 0 10px;
     width: 580px;
+    display: table;
 }
