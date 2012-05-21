@@ -9,6 +9,8 @@ Changelog
 ------------------
 * Bug fix: Change the FB like button to appear in english
   [prospchr refs #5094]
+* Change: Change code in eea.socialmedia to fix translation problem
+   [prospchr refs #5159]  
 
 4.2 - (2012-04-27)
 ------------------
