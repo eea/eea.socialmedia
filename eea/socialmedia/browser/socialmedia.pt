@@ -17,8 +17,11 @@
                     <td>
                          <div id="socialmedia-list">
                             <div id="delicious" class="social-box">
-                                <a href="http://www.delicious.com/save" onclick="window.open('http://www.delicious.com/save?v=5&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;">
-                                    <img tal:attributes="src string:${view/portal_url}/delicious20x20.png" alt="Delicious" />
+                                <a href="http://www.delicious.com/save" 
+                                   onclick="window.open('http://www.delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;">
+                                    <img tal:attributes="src string:${view/portal_url}/delicious20x20.png"  
+                                         alt="Delicious" 
+                                         i18n:attributes="alt"/>
                                 </a>
                             </div>                                     
                             <div id="google" class="social-box">
@@ -47,7 +50,7 @@
                                 <div class="fb-like" data-send="true" data-layout="button_count" data-show-faces="false"></div>             
                             </div>                            
                             <div id="twitter" class="social-box">
-                                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                                <a href="https://twitter.com/share" class="twitter-share-button"></a>
                                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                             </div>          
                         </div>
