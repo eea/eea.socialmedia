@@ -1,11 +1,13 @@
-Changelog
+﻿Changelog
 =========
 
 4.4-dev - (unreleased)
 ----------------------
-* Bug fix: fixed position of right align for documentActions 
+* Bug fix: fixed markup of HISTORY.txt file
+  [ciobabog refs #5231]
+* Bug fix: fixed position of right align for documentActions
   [ichimdav #5150]
-* Bug fix: Fix translation errors in eea.socialmedia 
+* Bug fix: Fix translation errors in eea.socialmedia
   [prospchr fixes #5159]
 
 4.3 - (2012-04-27)
@@ -13,14 +15,14 @@ Changelog
 * Bug fix: Change the FB like button to appear in english
   [prospchr refs #5094]
 * Change: Change code in eea.socialmedia to fix translation problem
-   [prospchr refs #5159]  
+  [prospchr refs #5159]
 
 4.2 - (2012-04-27)
 ------------------
-* Feature: Add new social network: tweeter, 
+* Feature: Add new social network: tweeter,
   facebook like and share, google plus one
   [prospchr fixes #5094]
-* Upgrade step: 
+* Upgrade step:
   1. in plone site setup > upgrade eea.socialmedia
   2. Hide plone.abovecontenttitle.documentactions
   From viewlets.interfaces.IBelowContentBody
@@ -29,7 +31,7 @@ Changelog
 
 4.1 - (2011-11-18)
 ------------------
-* Rerelease broken egg  
+* Rerelease broken egg
 
 4.0 - (2011-11-18)
 ------------------
