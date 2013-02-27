@@ -17,17 +17,17 @@
                     <td>
                          <div id="socialmedia-list">
                             <div id="delicious" class="social-box">
-                                <a href="http://www.delicious.com/save" 
+                                <a href="http://www.delicious.com/save"
                                    onclick="window.open('http://www.delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;">
-                                    <img tal:attributes="src string:${view/portal_url}/delicious20x20.png"  
-                                         alt="Delicious" 
+                                    <img tal:attributes="src string:${view/portal_url}/delicious20x20.png"
+                                         alt="Delicious"
                                          i18n:attributes="alt"/>
                                 </a>
-                            </div>                                     
+                            </div>
                             <div id="google" class="social-box">
                                  <!-- Place this tag where you want the +1 button to render -->
                                 <g:plusone size="medium"></g:plusone>
-                                
+
                                 <!-- Place this render call where appropriate -->
                                 <script type="text/javascript">
                                   (function() {
@@ -36,7 +36,7 @@
                                     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
                                   })();
                                 </script>
-                            </div>                           
+                            </div>
                             <div id="facebook" class="social-box">
                                 <div id="fb-root"></div>
                                 <script tal:content="string:(function(d, s, id) {
@@ -47,14 +47,14 @@
                                   fjs.parentNode.insertBefore(js, fjs);
                                 }(document, 'script', 'facebook-jssdk'));"
                                 ></script>
-                                <div class="fb-like" data-send="true" data-layout="button_count" data-show-faces="false"></div>             
-                            </div>                            
+                                <div class="fb-like" data-send="true" data-layout="button_count" data-show-faces="false"></div>
+                            </div>
                             <div id="twitter" class="social-box">
                                 <a href="https://twitter.com/share" class="twitter-share-button"></a>
                                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                            </div>          
+                            </div>
                         </div>
-                    </td>                    
+                    </td>
                     <td class="align-right">
                         <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
                             <li tal:repeat="daction view/actions"
@@ -68,19 +68,19 @@
                                     </tal:action>
                                 </a>
                             </li>
-                        
+
                         </ul>
-                        
-                    </td>            
+
+                    </td>
 
                         </tr>
-                    </table>              
-              
-              
+                    </table>
+
+
                     </tal:docactions>
-            
+
                     <div tal:replace="structure provider:plone.documentactions"/>
-            
+
                 </div>
 </div>
 

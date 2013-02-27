@@ -4,8 +4,8 @@
 <object name="portal_css">
 
     <stylesheet title=""
-        id="++resource++eea.socialmedia.stylesheets/EEASocialMedia.css"        
-        media="screen" rel="stylesheet" rendering="link" cacheable="True" compression="safe" cookable="True" 
+        id="++resource++eea.socialmedia.stylesheets/EEASocialMedia.css"
+        media="screen" rel="stylesheet" rendering="link" cacheable="True" compression="safe" cookable="True"
         expression=""
         />
 

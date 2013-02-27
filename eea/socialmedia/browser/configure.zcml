@@ -13,11 +13,11 @@
         />
 
     <!-- Viewlets registration -->
-    
+
     <browser:viewlet
         name="eea.socialmedia"
         manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
-        class=".viewlets.SocialMediaViewlet"     
+        class=".viewlets.SocialMediaViewlet"
         permission="zope2.View"
         />
 
