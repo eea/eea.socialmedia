@@ -9,6 +9,9 @@ Changelog
   Now, the page shows an image which is activated by passing the mouse hover
   it.
   [prospchr fixes #13990]
+* Upgrade step: 
+  1. ZMI->portal_quickinstaller
+  2. Reinstall eea.socialmedia
 
 4.5 - (2012-07-13)
 ------------------
