@@ -1,32 +1,33 @@
-#socialmedia-list {
-    vertical-align: top;
-}
-.social-box {
-    background: none repeat scroll 0 0 transparent !important;
-    float: left;
-    padding-right: 10px !important;
-}
-#socialmedia-list #twitter {
-    width: 85px;
-}
-#socialmedia-list #facebook {
-    width: 130px;
-}
-#socialmedia-list #google {
-    width: 60px;
-}
-#socialmedia-list #delicious {
-}
-#socialmedia-list .link-https {
-    background: none repeat scroll 0 0 transparent;
-    padding: 0 !important;
-}
-.align-right {
+.action-items {
     text-align: right;
+    vertical-align: top;
+    padding-top: 10px;
 }
+
 /* #5150 set table display to table */
 #content .table-document-actions {
-    margin: 0 10px;
+    margin: 0px;
     width: 580px;
     display: table;
 }
+
+
+/*
+ * Socialite options
+ */
+
+cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .cf { zoom: 1; }
+*:first-child+html .cf { zoom: 1; }
+
+.vhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+.social-buttons { display: block; list-style: none; padding: 0; margin: 0px; }
+ul.social-buttons { margin-left: 0px !important;}
+.social-buttons > li { display: block; margin: 0; padding: 0px 10px; float: left; }
+.social-buttons .socialite { display: block; position: relative; background: url('++resource++eea.socialmedia.images/social-sprite.png') 0 0 no-repeat; }
+.social-buttons .socialite-loaded { background: none !important; }
+
+.social-buttons .twitter-share { width: 55px; height: 65px; background-position: 0 0; }
+.social-buttons .googleplus-one { width: 50px; height: 65px; background-position: -75px 0; }
+.social-buttons .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }

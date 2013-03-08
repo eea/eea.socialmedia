@@ -5,6 +5,10 @@ Changelog
 ----------------------
 * Bug fix: removed unnecessary spaces and tabs
   [ghicaale refs #13990]
+* Bug fix: Changed the social buttons to load asynchronously on the pages.
+  Now, the page shows an image which is activated by passing the mouse hover
+  it.
+  [prospchr fixes #13990]
 
 4.5 - (2012-07-13)
 ------------------

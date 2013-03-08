@@ -11,6 +11,16 @@
         name="eea.socialmedia.stylesheets"
         directory="stylesheets"
         />
+        
+    <browser:resourceDirectory
+        name="eea.socialmedia.javascripts"
+        directory="javascripts"
+        />     
+
+    <browser:resourceDirectory
+        name="eea.socialmedia.images"
+        directory="images"
+        />            
 
     <!-- Viewlets registration -->
 

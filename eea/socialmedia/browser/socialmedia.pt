@@ -7,80 +7,86 @@
         <tal:docactions tal:condition="view/actions">
 
             <h5 class="hiddenStructure"
-                i18n:translate="heading_document_actions">
+                i18n:translate="">
                 Document Actions
             </h5>
-            <h2 i18n:translate="share_with_others" class="share-title">Share with others</h2>
+            <h2 i18n:translate="" class="share-title">Share with others</h2>
 
             <table class="table-document-actions">
-                <tr>
-                    <td>
-                         <div id="socialmedia-list">
-                            <div id="delicious" class="social-box">
-                                <a href="http://www.delicious.com/save"
-                                   onclick="window.open('http://www.delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;">
-                                    <img tal:attributes="src string:${view/portal_url}/delicious20x20.png"
-                                         alt="Delicious"
-                                         i18n:attributes="alt"/>
-                                </a>
-                            </div>
-                            <div id="google" class="social-box">
-                                 <!-- Place this tag where you want the +1 button to render -->
-                                <g:plusone size="medium"></g:plusone>
-
-                                <!-- Place this render call where appropriate -->
-                                <script type="text/javascript">
-                                  (function() {
-                                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                                    po.src = 'https://apis.google.com/js/plusone.js';
-                                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                                  })();
-                                </script>
-                            </div>
-                            <div id="facebook" class="social-box">
-                                <div id="fb-root"></div>
-                                <script tal:content="string:(function(d, s, id) {
-                                  var js, fjs = d.getElementsByTagName(s)[0];
-                                  if (d.getElementById(id)) return;
-                                  js = d.createElement(s); js.id = id;
-                                  js.src = '//connect.facebook.net/${view/create_locale}/all.js#xfbml=1';
-                                  fjs.parentNode.insertBefore(js, fjs);
-                                }(document, 'script', 'facebook-jssdk'));"
-                                ></script>
-                                <div class="fb-like" data-send="true" data-layout="button_count" data-show-faces="false"></div>
-                            </div>
-                            <div id="twitter" class="social-box">
-                                <a href="https://twitter.com/share" class="twitter-share-button"></a>
-                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="align-right">
-                        <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
-                            <li tal:repeat="daction view/actions"
-                                tal:attributes="id python:'document-action-' + normalizeString(daction['id'])">
-                                <a href=""
-                               tal:attributes="href daction/url;
-                                               title daction/description">
-                                   <img tal:condition="daction/icon" tal:attributes="src daction/icon; alt daction/title; title daction/title"/>
-                                   <tal:action tal:condition="not:daction/icon" tal:content="daction/title" i18n:translate="">
-                                    Action name
-                                    </tal:action>
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </td>
-
+                        <tr>
+                            <td>
+				<div id="socialmedia-list" 
+				     tal:define="pageUrl here/absolute_url">
+				    <ul class="social-buttons cf">
+					<li><a tal:attributes="data-url pageUrl"
+					       href="http://twitter.com/share" 
+					       class="socialite twitter-share link-plain" 
+					       data-count="vertical"
+					       data-via="EUEnvironment"
+					       rel="nofollow" 
+					       target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
+					<li><a tal:attributes="data-href pageUrl;
+					                       href string:https://plus.google.com/share?url=${pageUrl}"
+					       class="socialite googleplus-one link-plain" 
+					       data-size="tall" 
+					       rel="nofollow" 
+					       target="_blank"><span class="vhidden">Share on Google+</span></a></li>
+					<li><a tal:attributes="data-href pageUrl;
+					                       href string:http://www.facebook.com/sharer.php?u=${pageUrl}"
+					       class="socialite facebook-like link-plain" 
+					       data-send="false" 
+					       data-layout="box_count" 
+					       data-width="60" 
+					       data-show-faces="false" 
+					       rel="nofollow" 
+					       target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
+				    </ul>                            
+				</div> 
+                            </td>
+			    <td class="action-items">
+			       <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
+				   <li tal:repeat="daction view/actions"
+				       tal:attributes="id python:'document-action-' + normalizeString(daction['id'])">
+				       <a href=""
+				      tal:attributes="href daction/url;
+						      title daction/description">
+					  <img tal:condition="daction/icon" tal:attributes="src daction/icon; alt daction/title; title daction/title"/>
+					  <tal:action tal:condition="not:daction/icon" tal:content="daction/title" i18n:translate="">
+					   Action name
+					   </tal:action>
+				       </a>
+				   </li>
+				   <li id="delicious">
+					<a href="http://www.delicious.com/save"
+					   onclick="window.open('http://www.delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;">
+					    <img tal:attributes="src string:${view/portal_url}/delicious20x20.png"
+						 alt="Delicious"
+						 i18n:attributes="alt"/>
+					</a>
+				    </li>
+			       </ul> 
+       
+			   </td>
                         </tr>
                     </table>
-
 
                     </tal:docactions>
 
                     <div tal:replace="structure provider:plone.documentactions"/>
 
                 </div>
+		
+		<script src="++resource++eea.socialmedia.javascripts/socialite.js"></script>
+		<script>
+		$(document).ready(function()
+		{
+			$('div#socialmedia-list').one('mouseenter', function()
+			{
+				Socialite.load($(this)[0]);
+			});
+		});
+		</script>		
+		
+		
 </div>
 
