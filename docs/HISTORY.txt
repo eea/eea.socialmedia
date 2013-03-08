@@ -12,6 +12,7 @@ Changelog
 * Upgrade step: 
   1. ZMI->portal_quickinstaller
   2. Reinstall eea.socialmedia
+* Bug fix: Uploaded the socialite.min.js instead of socialite.js
 
 4.5 - (2012-07-13)
 ------------------
