@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*!
  * Socialite v2.0
  * http://socialitejs.com
