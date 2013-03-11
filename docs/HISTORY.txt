@@ -9,9 +9,10 @@ Changelog
   Now, the page shows an image which is activated by passing the mouse hover
   it.
   [prospchr fixes #13990]
-* Upgrade step: 
-  1. ZMI->portal_quickinstaller
-  2. Reinstall eea.socialmedia
+* Upgrade step:
+   1. ZMI->portal_quickinstaller
+   2. Reinstall eea.socialmedia
+
 * Bug fix: Uploaded the socialite.min.js instead of socialite.js
 * Bug fix: Social media buttins are multilingual now.
   [prospchr fixes #13990]
@@ -43,8 +44,9 @@ Changelog
   facebook like and share, google plus one
   [prospchr fixes #5094]
 * Upgrade step:
-  1. in plone site setup > upgrade eea.socialmedia
-  2. Hide plone.abovecontenttitle.documentactions
+    1. in plone site setup > upgrade eea.socialmedia
+    2. Hide plone.abovecontenttitle.documentactions
+
   From viewlets.interfaces.IBelowContentBody
   using @@manage-viewlets
   [prospchr fixes #5094]
@@ -70,4 +72,3 @@ Changelog
 0.1 (2010-02-15)
 ----------------
 * Initial release
-
