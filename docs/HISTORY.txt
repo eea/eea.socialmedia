@@ -13,6 +13,8 @@ Changelog
   1. ZMI->portal_quickinstaller
   2. Reinstall eea.socialmedia
 * Bug fix: Uploaded the socialite.min.js instead of socialite.js
+* Bug fix: Social media buttins are multilingual now.
+  [prospchr fixes #13990]
 
 4.5 - (2012-07-13)
 ------------------

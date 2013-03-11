@@ -77,15 +77,24 @@
                 </div>
 		
 		<script src="++resource++eea.socialmedia.javascripts/socialite.js"></script>
-		<script>
-		$(document).ready(function()
-		{
-			$('div#socialmedia-list').one('mouseenter', function()
-			{
-				Socialite.load($(this)[0]);
-			});
-		});
-		</script>		
+		<script tal:define="locales view/create_locale;
+		                    locTwitter python:locales[0];
+				    locGoogle python:locales[1];
+				    locFacebook python:locales[2] "
+		        tal:content="string:
+		    $$(document).ready(function()
+		    {
+		            Socialite.setup({
+				twitter: {lang: '$locTwitter'},			    
+				googleplus: {lang: '$locGoogle'},
+				facebook: {lang: '$locFacebook'}
+			    });
+			    $$('div#socialmedia-list').one('mouseenter', function()
+			    {			
+				    Socialite.load($$(this)[0]);
+			    });
+		    });">
+		    </script>		
 		
 		
 </div>

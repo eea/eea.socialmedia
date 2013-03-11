@@ -18,27 +18,34 @@ class SocialMediaViewlet(content.DocumentActionsViewlet):
         context = aq_inner(self.context)
         plt = getToolByName(context, 'portal_languages')
         pl = plt.getPreferredLanguage()
-
+        
+        # Twitter
+        locTwitter = pl
+    
+        # Google plus: locales[1]
+        # Facebook: locales[2]
         if pl == "cs":
-            new_locale = "cs_CZ"
+            locFacebook = "cs_CZ"
         elif pl == "da":
-            new_locale = "da_DK"
+            locFacebook = "da_DK"
         elif pl == "el":
-            new_locale = "el_GR"
+            locFacebook = "el_GR"
         elif pl == "en":
-            new_locale = "en_GB"
+            locGoogle = "en-GB"
+            locFacebook = "en_GB"
         elif pl == "et":
-            new_locale = "et_EE"
+            locFacebook = "et_EE"
+        elif pl == "pt":
+            locGoogle = "pt-PT"            
         elif pl == "sl":
-            new_locale = "sl_SI"
+            locFacebook = "sl_SI"
         elif pl == "sv":
-            new_locale = "sv_SE"
+            locFacebook = "sv_SE"
+        elif pl == "zh":
+            locGoogle = "zh-CN"
         else:
-            new_locale = pl + "_" + pl.upper()
+            locGoogle = pl
+            locFacebook = pl + "_" + pl.upper()
 
-        return new_locale
-
-
-
-
+        return (locTwitter,locGoogle,locFacebook)
 
