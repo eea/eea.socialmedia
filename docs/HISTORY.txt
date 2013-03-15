@@ -1,8 +1,8 @@
 Changelog
 =========
 
-4.6-dev - (unreleased)
-----------------------
+4.6 - (2013-03-15)
+------------------
 * Bug fix: removed unnecessary spaces and tabs
   [ghicaale refs #13990]
 * Bug fix: Changed the social buttons to load asynchronously on the pages.
@@ -12,7 +12,6 @@ Changelog
 * Upgrade step:
    1. ZMI->portal_quickinstaller
    2. Reinstall eea.socialmedia
-
 * Bug fix: Uploaded the socialite.min.js instead of socialite.js
 * Bug fix: Social media buttins are multilingual now.
   [prospchr fixes #13990]
@@ -46,7 +45,6 @@ Changelog
 * Upgrade step:
     1. in plone site setup > upgrade eea.socialmedia
     2. Hide plone.abovecontenttitle.documentactions
-
   From viewlets.interfaces.IBelowContentBody
   using @@manage-viewlets
   [prospchr fixes #5094]
@@ -72,3 +70,4 @@ Changelog
 0.1 (2010-02-15)
 ----------------
 * Initial release
+
