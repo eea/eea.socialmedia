@@ -3,6 +3,8 @@ Changelog
 
 4.7-dev - (unreleased)
 ----------------------
+* Bug fix: Fixed the reference for local variable in create_locale.
+  [prospchr fixes #14176]
 
 4.6 - (2013-03-15)
 ------------------
