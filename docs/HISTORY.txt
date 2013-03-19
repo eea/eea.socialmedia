@@ -1,6 +1,9 @@
 Changelog
 =========
 
+4.8-dev - (unreleased)
+----------------------
+
 4.7 - (2013-03-19)
 ------------------
 * Bug fix: Fixed the reference for local variable in create_locale.
