@@ -11,10 +11,7 @@
     display: table;
 }
 
-
-/*
- * Socialite options
- */
+/* Socialite options */
 
 cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 * html .cf { zoom: 1; }
@@ -24,7 +21,7 @@ cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear
 
 .social-buttons { display: block; list-style: none; padding: 0; margin: 0px; }
 ul.social-buttons { margin-left: 0px !important;}
-.social-buttons > li { display: block; margin: 0; padding: 0px 10px; float: left; }
+ul.social-buttons > li { display: block; margin: 0; padding: 0px 10px; float: left; }
 .social-buttons .socialite { display: block; position: relative; background: url('++resource++eea.socialmedia.images/social-sprite.png') 0 0 no-repeat; }
 .social-buttons .socialite-loaded { background: none !important; }
 

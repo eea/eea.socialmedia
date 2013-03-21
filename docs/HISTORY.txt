@@ -3,6 +3,8 @@ Changelog
 
 4.8-dev - (unreleased)
 ----------------------
+* Bug fix: fixed css selectors for the social buttons.
+  [ghicaale refs #14198]
 
 4.7 - (2013-03-19)
 ------------------
