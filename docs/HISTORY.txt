@@ -1,8 +1,8 @@
 Changelog
 =========
 
-4.9-dev - (unreleased)
-----------------------
+4.9 - (2013-04-17)
+------------------
 * Bug fix: fixed HISTORY.txt RST markup
   [ghicaale refs #14321]
 
@@ -60,7 +60,6 @@ Changelog
 * Upgrade step:
     1. in plone site setup > upgrade eea.socialmedia
     2. Hide plone.abovecontenttitle.documentactions
-
   From viewlets.interfaces.IBelowContentBody
   using @@manage-viewlets
   [prospchr fixes #5094]
@@ -86,3 +85,4 @@ Changelog
 0.1 (2010-02-15)
 ----------------
 * Initial release
+
