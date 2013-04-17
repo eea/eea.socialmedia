@@ -1,6 +1,9 @@
 Changelog
 =========
 
+5.0-dev - (unreleased)
+----------------------
+
 4.9 - (2013-04-17)
 ------------------
 * Bug fix: fixed HISTORY.txt RST markup
