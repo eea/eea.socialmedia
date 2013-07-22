@@ -3,6 +3,8 @@ Changelog
 
 5.0-dev - (unreleased)
 ----------------------
+* Bug fix: Fixed missing translations in templates.
+  [prospchr refs #15572]
 
 4.9 - (2013-04-17)
 ------------------

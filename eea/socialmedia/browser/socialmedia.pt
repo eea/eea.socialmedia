@@ -24,13 +24,13 @@
 					       data-count="vertical"
 					       data-via="EUEnvironment"
 					       rel="nofollow" 
-					       target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
+					       target="_blank"><span class="vhidden" i18n:translate="">Share on Twitter</span></a></li>
 					<li><a tal:attributes="data-href pageUrl;
 					                       href string:https://plus.google.com/share?url=${pageUrl}"
 					       class="socialite googleplus-one link-plain" 
 					       data-size="tall" 
 					       rel="nofollow" 
-					       target="_blank"><span class="vhidden">Share on Google+</span></a></li>
+					       target="_blank"><span class="vhidden" i18n:translate="">Share on Google+</span></a></li>
 					<li><a tal:attributes="data-href pageUrl;
 					                       href string:http://www.facebook.com/sharer.php?u=${pageUrl}"
 					       class="socialite facebook-like link-plain" 
@@ -39,7 +39,7 @@
 					       data-width="60" 
 					       data-show-faces="false" 
 					       rel="nofollow" 
-					       target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
+					       target="_blank"><span class="vhidden" i18n:translate="">Share on Facebook</span></a></li>
 				    </ul>                            
 				</div> 
                             </td>
