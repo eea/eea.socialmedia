@@ -1,8 +1,8 @@
 Changelog
 =========
 
-5.0-dev - (unreleased)
-----------------------
+5.0 - (2013-08-09)
+------------------
 * Bug fix: Fixed missing translations in templates.
   [prospchr refs #15572]
 
