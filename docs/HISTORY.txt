@@ -1,8 +1,8 @@
 Changelog
 =========
 
-5.1-dev - (unreleased)
-----------------------
+5.1 - (2013-10-07)
+------------------
 * Change: Added the notoc class in order to remove the Share with others 
   header from the EEA TOC 
   [ichimdav refs #16929]
