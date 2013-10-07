@@ -10,7 +10,7 @@
                 i18n:translate="">
                 Document Actions
             </h5>
-            <h2 i18n:translate="" class="share-title">Share with others</h2>
+            <h2 i18n:translate="" class="share-title notoc">Share with others</h2>
 
             <table class="table-document-actions">
                         <tr>
