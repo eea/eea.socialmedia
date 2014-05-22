@@ -7,13 +7,13 @@
 /* #5150 set table display to table */
 #content .table-document-actions {
     margin: 0px;
-    width: 580px;
+    width: 100%;
     display: table;
 }
 
 /* Socialite options */
 
-cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 * html .cf { zoom: 1; }
 *:first-child+html .cf { zoom: 1; }
 
