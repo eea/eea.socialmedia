@@ -1,8 +1,8 @@
 Changelog
 =========
 
-5.2-dev - (unreleased)
-----------------------
+5.2 - (2014-06-06)
+------------------
 * Change: table-document-actions class now spans to 100% instead of having
   a hardcoded value
   [ichimdav refs #19536]
