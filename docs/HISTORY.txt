@@ -1,6 +1,9 @@
 Changelog
 =========
 
+5.3-dev - (unreleased)
+----------------------
+
 5.2 - (2014-06-06)
 ------------------
 * Change: table-document-actions class now spans to 100% instead of having
