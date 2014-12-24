@@ -81,19 +81,17 @@
 		                    locTwitter python:locales[0];
 				    locGoogle python:locales[1];
 				    locFacebook python:locales[2] "
-		        tal:content="string:
-		    $$(document).ready(function()
-		    {
-		            Socialite.setup({
-				twitter: {lang: '$locTwitter'},			    
-				googleplus: {lang: '$locGoogle'},
-				facebook: {lang: '$locFacebook'}
-			    });
-			    $$('div#socialmedia-list').one('mouseenter', function()
-			    {			
-				    Socialite.load($$(this)[0]);
-			    });
-		    });">
+				tal:content="string:
+				jQuery(document).ready(function(){
+					Socialite.setup({
+						twitter: {lang: '$locTwitter'},
+						googleplus: {lang: '$locGoogle'},
+						facebook: {lang: '$locFacebook'}
+					});
+					jQuery('div#socialmedia-list').one('mouseenter', function(){
+						Socialite.load(jQuery(this)[0]);
+					});
+				});">
 		    </script>		
 		
 		
