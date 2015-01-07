@@ -3,8 +3,13 @@ Changelog
 
 5.3-dev - (unreleased)
 ----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for EEA Social Media
+  [olimpiurob refs #22037]
+* Change: Added ISocialMediaLayer add-on layer
+  [olimpiurob refs #22037]
 * Bug fix: Updated socialmedia.pt template for Chameleon compatibility
-[olimpiurob refs #22310]
+  [olimpiurob refs #22310]
 
 5.2 - (2014-06-06)
 ------------------
