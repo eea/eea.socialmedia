@@ -1,6 +1,9 @@
 Changelog
 =========
 
+5.4-dev - (unreleased)
+----------------------
+
 5.3 - (2015-01-09)
 ------------------
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
