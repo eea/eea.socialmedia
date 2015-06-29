@@ -22,8 +22,8 @@ class SocialMediaViewlet(content.DocumentActionsViewlet):
         # Social Networks
         locTwitter = pl
         locGoogle = pl
-        locFacebook = pl + "_" + pl.upper()        
-    
+        locFacebook = pl + "_" + pl.upper()
+
         if pl == "cs":
             locFacebook = "cs_CZ"
         elif pl == "da":
@@ -43,7 +43,7 @@ class SocialMediaViewlet(content.DocumentActionsViewlet):
             locFacebook = "sv_SE"
         elif pl == "zh":
             locGoogle = "zh-CN"
-        
+
         # Twitter: locales[0]
         # Google plus: locales[1]
         # Facebook: locales[2]
