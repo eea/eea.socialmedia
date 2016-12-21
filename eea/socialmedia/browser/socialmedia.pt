@@ -15,33 +15,40 @@
             <table class="table-document-actions">
                         <tr>
                             <td>
-				<div id="socialmedia-list" 
+				<div id="socialmedia-list"
 				     tal:define="pageUrl here/absolute_url">
 				    <ul class="social-buttons cf">
 					<li><a tal:attributes="data-url pageUrl"
-					       href="http://twitter.com/share" 
-					       class="socialite twitter-share link-plain" 
+					       href="http://twitter.com/share"
+					       class="socialite twitter-share link-plain"
 					       data-count="vertical"
 					       data-via="EUEnvironment"
-					       rel="nofollow" 
+					       rel="nofollow"
 					       target="_blank"><span class="vhidden" i18n:translate="">Share on Twitter</span></a></li>
 					<li><a tal:attributes="data-href pageUrl;
 					                       href string:https://plus.google.com/share?url=${pageUrl}"
-					       class="socialite googleplus-one link-plain" 
-					       data-size="tall" 
-					       rel="nofollow" 
+					       class="socialite googleplus-one link-plain"
+					       data-size="tall"
+					       rel="nofollow"
 					       target="_blank"><span class="vhidden" i18n:translate="">Share on Google+</span></a></li>
 					<li><a tal:attributes="data-href pageUrl;
 					                       href string:http://www.facebook.com/sharer.php?u=${pageUrl}"
-					       class="socialite facebook-like link-plain" 
-					       data-send="false" 
-					       data-layout="box_count" 
-					       data-width="60" 
-					       data-show-faces="false" 
-					       rel="nofollow" 
+					       class="socialite facebook-like link-plain"
+					       data-send="false"
+					       data-layout="box_count"
+					       data-width="60"
+					       data-show-faces="false"
+					       rel="nofollow"
 					       target="_blank"><span class="vhidden" i18n:translate="">Share on Facebook</span></a></li>
-				    </ul>                            
-				</div> 
+					 <li><a tal:attributes="data-href pageUrl;
+					                       href string:http://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}"
+					       class="socialite linkedin-share link-plain"
+					       data-counter="top"
+					       rel="nofollow"
+					       target="_blank"><span class="vhidden" i18n:translate="">Share on LinkedIn</span></a></li>
+
+				    </ul>
+				</div>
                             </td>
 			    <td class="action-items">
 			       <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
@@ -64,8 +71,8 @@
 						 i18n:attributes="alt"/>
 					</a>
 				    </li>
-			       </ul> 
-       
+			       </ul>
+
 			   </td>
                         </tr>
                     </table>
@@ -75,7 +82,7 @@
                     <div tal:replace="structure provider:plone.documentactions"/>
 
                 </div>
-		
+
 		<script src="++resource++eea.socialmedia.javascripts/socialite.js"></script>
 		<script tal:define="locales view/create_locale;
 		                    locTwitter python:locales[0];
@@ -92,8 +99,8 @@
 						Socialite.load(jQuery(this)[0]);
 					});
 				});">
-		    </script>		
-		
-		
+		    </script>
+
+
 </div>
 
