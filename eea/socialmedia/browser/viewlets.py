@@ -1,8 +1,8 @@
 """ Custom viewlets
 """
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from plone.app.layout.viewlets import content
 from Products.CMFCore.utils import getToolByName
+from plone.app.layout.viewlets import content
 from Acquisition import aq_inner
 
 class SocialMediaViewlet(content.DocumentActionsViewlet):
@@ -48,4 +48,3 @@ class SocialMediaViewlet(content.DocumentActionsViewlet):
         # Google plus: locales[1]
         # Facebook: locales[2]
         return (locTwitter, locGoogle, locFacebook)
-
