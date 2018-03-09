@@ -23,13 +23,13 @@
 					       class="socialite twitter-share link-plain"
 					       data-count="vertical"
 					       data-via="EUEnvironment"
-					       rel="nofollow"
+					       rel="noopener"
 					       target="_blank"><span class="vhidden" i18n:translate="">Share on Twitter</span></a></li>
 					<li><a tal:attributes="data-href pageUrl;
 					                       href string:https://plus.google.com/share?url=${pageUrl}"
 					       class="socialite googleplus-one link-plain"
 					       data-size="tall"
-					       rel="nofollow"
+                           rel="noopener"
 					       target="_blank"><span class="vhidden" i18n:translate="">Share on Google+</span></a></li>
 					<li><a tal:attributes="data-href pageUrl;
 					                       href string:http://www.facebook.com/sharer.php?u=${pageUrl}"
@@ -38,13 +38,13 @@
 					       data-layout="box_count"
 					       data-width="60"
 					       data-show-faces="false"
-					       rel="nofollow"
+                           rel="noopener"
 					       target="_blank"><span class="vhidden" i18n:translate="">Share on Facebook</span></a></li>
 					 <li><a tal:attributes="data-href pageUrl;
 					                       href string:http://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}"
 					       class="socialite linkedin-share link-plain"
 					       data-counter="top"
-					       rel="nofollow"
+                           rel="noopener"
 					       target="_blank"><span class="vhidden" i18n:translate="">Share on LinkedIn</span></a></li>
 
 				    </ul>
@@ -65,6 +65,7 @@
 				   </li>
 				   <li id="delicious">
 					<a href="http://www.delicious.com/save"
+                       rel="nofollow"
 					   onclick="window.open('http://www.delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;">
 					    <img tal:attributes="src string:${view/portal_url}/delicious20x20.png"
 						 alt="Delicious"
@@ -83,7 +84,6 @@
 
                 </div>
 
-		<script src="++resource++eea.socialmedia.javascripts/socialite.js"></script>
 		<script tal:define="locales view/create_locale;
 		                    locTwitter python:locales[0];
 				    locGoogle python:locales[1];
@@ -101,6 +101,4 @@
 				});">
 		    </script>
 
-
 </div>
-
