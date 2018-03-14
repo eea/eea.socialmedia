@@ -1,8 +1,10 @@
 Changelog
 =========
 
-6.0.dev0 - (unreleased)
------------------------
+6.0 - (2018-03-14)
+------------------
+* Change: added fixes from custom to socialmedia css
+  [ichim-david refs #91590]
 
 5.9 - (2017-12-12)
 ------------------
