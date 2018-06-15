@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object name="portal_skins" meta_type="Plone Skins Tools">
+
+    <object name="eea_socialmedia" remove="True" />
+
+    <skin-path name="*">
+        <layer name="eea_socialmedia" remove="True" />
+    </skin-path>
+
+</object>

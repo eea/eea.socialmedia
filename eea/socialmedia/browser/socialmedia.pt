@@ -15,90 +15,81 @@
             <table class="table-document-actions">
                         <tr>
                             <td>
-				<div id="socialmedia-list"
-				     tal:define="pageUrl here/absolute_url">
-				    <ul class="social-buttons cf">
-					<li><a tal:attributes="data-url pageUrl"
-					       href="http://twitter.com/share"
-					       class="socialite twitter-share link-plain"
-					       data-count="vertical"
-					       data-via="EUEnvironment"
-					       rel="noopener"
-					       target="_blank"><span class="vhidden" i18n:translate="">Share on Twitter</span></a></li>
-					<li><a tal:attributes="data-href pageUrl;
-					                       href string:https://plus.google.com/share?url=${pageUrl}"
-					       class="socialite googleplus-one link-plain"
-					       data-size="tall"
+                <div id="socialmedia-list"
+                     tal:define="pageUrl here/absolute_url">
+                    <ul class="social-buttons cf">
+                    <li><a tal:attributes="data-url pageUrl"
+                           href="http://twitter.com/share"
+                           class="socialite twitter-share link-plain"
+                           data-count="vertical"
+                           data-via="EUEnvironment"
                            rel="noopener"
-					       target="_blank"><span class="vhidden" i18n:translate="">Share on Google+</span></a></li>
-					<li><a tal:attributes="data-href pageUrl;
-					                       href string:http://www.facebook.com/sharer.php?u=${pageUrl}"
-					       class="socialite facebook-like link-plain"
-					       data-send="false"
-					       data-layout="box_count"
-					       data-width="60"
-					       data-show-faces="false"
+                           target="_blank"><span class="vhidden" i18n:translate="">Share on Twitter</span></a></li>
+                    <li><a tal:attributes="data-href pageUrl;
+                                           href string:https://plus.google.com/share?url=${pageUrl}"
+                           class="socialite googleplus-one link-plain"
+                           data-size="tall"
                            rel="noopener"
-					       target="_blank"><span class="vhidden" i18n:translate="">Share on Facebook</span></a></li>
-					 <li><a tal:attributes="data-href pageUrl;
-					                       href string:http://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}"
-					       class="socialite linkedin-share link-plain"
-					       data-counter="top"
+                           target="_blank"><span class="vhidden" i18n:translate="">Share on Google+</span></a></li>
+                    <li><a tal:attributes="data-href pageUrl;
+                                           href string:http://www.facebook.com/sharer.php?u=${pageUrl}"
+                           class="socialite facebook-like link-plain"
+                           data-send="false"
+                           data-layout="box_count"
+                           data-width="60"
+                           data-show-faces="false"
                            rel="noopener"
-					       target="_blank"><span class="vhidden" i18n:translate="">Share on LinkedIn</span></a></li>
+                           target="_blank"><span class="vhidden" i18n:translate="">Share on Facebook</span></a></li>
+                     <li><a tal:attributes="data-href pageUrl;
+                                           href string:http://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}"
+                           class="socialite linkedin-share link-plain"
+                           data-counter="top"
+                           rel="noopener"
+                           target="_blank"><span class="vhidden" i18n:translate="">Share on LinkedIn</span></a></li>
 
-				    </ul>
-				</div>
-                            </td>
-			    <td class="action-items">
-			       <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
-				   <li tal:repeat="daction view/actions"
-				       tal:attributes="id python:'document-action-' + normalizeString(daction['id'])">
-				       <a href=""
-				      tal:attributes="href daction/url;
-						      title daction/description">
-					  <img tal:condition="daction/icon" tal:attributes="src daction/icon; alt daction/title; title daction/title"/>
-					  <tal:action tal:condition="not:daction/icon" tal:content="daction/title" i18n:translate="">
-					   Action name
-					   </tal:action>
-				       </a>
-				   </li>
-				   <li id="delicious">
-					<a href="http://www.delicious.com/save"
-                       rel="nofollow"
-					   onclick="window.open('http://www.delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;">
-					    <img tal:attributes="src string:${view/portal_url}/delicious20x20.png"
-						 alt="Delicious"
-						 i18n:attributes="alt"/>
-					</a>
-				    </li>
-			       </ul>
-
-			   </td>
-                        </tr>
-                    </table>
-
-                    </tal:docactions>
-
-                    <div tal:replace="structure provider:plone.documentactions"/>
-
+                    </ul>
                 </div>
+                            </td>
+                <td class="action-items">
+                   <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
+                   <li tal:repeat="daction view/actions"
+                       tal:attributes="id python:'document-action-' + normalizeString(daction['id'])">
+                       <a href=""
+                      tal:attributes="href daction/url;
+                              title daction/description">
+                      <img tal:condition="daction/icon" tal:attributes="src daction/icon; alt daction/title; title daction/title"/>
+                      <tal:action tal:condition="not:daction/icon" tal:content="daction/title" i18n:translate="">
+                       Action name
+                       </tal:action>
+                       </a>
+                   </li>
+                   </ul>
 
-		<script tal:define="locales view/create_locale;
-		                    locTwitter python:locales[0];
-				    locGoogle python:locales[1];
-				    locFacebook python:locales[2] "
-				tal:content="string:
-				jQuery(document).ready(function(){
-					Socialite.setup({
-						twitter: {lang: '$locTwitter'},
-						googleplus: {lang: '$locGoogle'},
-						facebook: {lang: '$locFacebook'}
-					});
-					jQuery('div#socialmedia-list').one('mouseenter', function(){
-						Socialite.load(jQuery(this)[0]);
-					});
-				});">
-		    </script>
+               </td>
+                        </tr>
+            </table>
+
+        </tal:docactions>
+
+        <div tal:replace="structure provider:plone.documentactions"/>
+
+    </div>
+
+    <script tal:define="locales view/create_locale;
+                        locTwitter python:locales[0];
+                        locGoogle python:locales[1];
+                        locFacebook python:locales[2]"
+            tal:content="string:
+                jQuery(document).ready(function(){
+                    Socialite.setup({
+                        twitter: {lang: '$locTwitter'},
+                        googleplus: {lang: '$locGoogle'},
+                        facebook: {lang: '$locFacebook'}
+                    });
+                    jQuery('div#socialmedia-list').one('mouseenter', function(){
+                        Socialite.load(jQuery(this)[0]);
+                    });
+                });">
+    </script>
 
 </div>
