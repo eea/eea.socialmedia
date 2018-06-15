@@ -1,7 +1,7 @@
 Changelog
 =========
 
-6.1-dev0 - (unreleased)
+6.1 - (2018-06-15)
 ---------------------
 * Feature: created uninstall profile
   [alecghica refs #95341]
