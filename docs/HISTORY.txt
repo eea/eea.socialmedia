@@ -1,6 +1,13 @@
 Changelog
 =========
 
+6.1 - (2018-06-15)
+---------------------
+* Feature: created uninstall profile
+  [alecghica refs #95341]
+* Feature: removed link to Delicious
+  [alecghica refs #95341]
+
 6.0 - (2018-03-14)
 ------------------
 * Change: added fixes from custom to socialmedia css

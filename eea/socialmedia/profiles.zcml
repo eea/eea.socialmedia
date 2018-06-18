@@ -9,4 +9,12 @@
       description="Extension profile for EEA Social Media"
       provides="Products.GenericSetup.interfaces.EXTENSION" />
 
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Remove EEA Social Media"
+      directory="profiles/uninstall"
+      description="Removes EEA Social Media from Plone"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>

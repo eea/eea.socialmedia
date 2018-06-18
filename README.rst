@@ -1,8 +1,12 @@
 ================
 EEA Social Media
 ================
-.. image:: http://ci.eionet.europa.eu/job/eea/job/eea.socialmedia/job/master/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea/job/eea.socialmedia/job/master/display/redirect
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.socialmedia/develop
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.socialmedia/job/develop/display/redirect
+  :alt: develop
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.socialmedia/master
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.socialmedia/job/master/display/redirect
+  :alt: master
 
 
 Contents
