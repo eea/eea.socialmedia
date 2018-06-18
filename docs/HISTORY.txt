@@ -1,6 +1,9 @@
 Changelog
 =========
 
+6.2-dev0 - (unreleased)
+---------------------
+
 6.1 - (2018-06-15)
 ---------------------
 * Feature: created uninstall profile
@@ -160,4 +163,3 @@ Changelog
 0.1 (2010-02-15)
 ----------------
 * Initial release
-
